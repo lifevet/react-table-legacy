@@ -43,7 +43,6 @@
     "docs:build": "yarn build && cd docs && yarn && yarn build"
   },
   "dependencies": {
-    "@types/react-table": "^6.8.5",
     "classnames": "^2.2.5",
     "react-is": "^16.8.1"
   },
