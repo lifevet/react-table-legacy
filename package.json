@@ -3,15 +3,15 @@
   "version": "6.11.5",
   "description": "A fast, lightweight, opinionated table and datagrid built on React",
   "license": "MIT",
-  "homepage": "https://github.com/tannerlinsley/react-table/tree/v6#readme",
+  "homepage": "https://github.com/lifevet/react-table-legacy/tree/v6#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tannerlinsley/react-table.git"
+    "url": "git+https://github.com/tannerlinsley/react-table-legacy.git"
   },
   "keywords": [
     "react",
     "table",
-    "react-table",
+    "react-table-legacy",
     "datagrid"
   ],
   "main": "lib/index.js",
@@ -20,9 +20,9 @@
     "src/",
     "es/",
     "lib/",
-    "react-table.js",
-    "react-table.min.js",
-    "react-table.css",
+    "react-table-legacy.js",
+    "react-table-legacy.min.js",
+    "react-table-legacy.css",
     "media/*.png"
   ],
   "scripts": {
@@ -30,8 +30,8 @@
     "build:es": "cross-env BABEL_ENV=es babel src --out-dir es --source-maps inline",
     "build:umd": "cross-env BABEL_ENV=umd rollup -c",
     "build:umd-min": "cross-env BABEL_ENV=umd NODE_ENV=production rollup -c",
-    "build:css": "rimraf react-table.css && stylus src/index.styl --compress -o react-table.css && yarn css:autoprefix",
-    "css:autoprefix": "postcss --use autoprefixer react-table.css -r",
+    "build:css": "rimraf react-table-legacy.css && stylus src/index.styl --compress -o react-table-legacy.css && yarn css:autoprefix",
+    "css:autoprefix": "postcss --use autoprefixer react-table-legacy.css -r",
     "watch": "npm-run-all --parallel watch:*",
     "watch:js": "onchange 'src/**/*.js' -i -- yarn build:cjs",
     "watch:css": "onchange 'src/**/*.styl' -i -- yarn build:css",
